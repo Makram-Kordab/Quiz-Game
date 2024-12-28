@@ -83,10 +83,10 @@ const questions = [
     {
         question: "Which country is known as the Land of the Rising Sun?",
         answers: [
-            {text: "Japan", correct: true},
             {text: "China", correct: false},
             {text: "South Korea", correct: false},
             {text: "Thailand", correct: false},
+            {text: "Japan", correct: true},
         ]
     },
     {
@@ -111,9 +111,9 @@ const questions = [
         question: "What is the smallest unit of life?",
         answers: [
             {text: "Organ", correct: false},
+            {text: "Molecule", correct: false},
             {text: "Cell", correct: true},
             {text: "Atom", correct: false},
-            {text: "Molecule", correct: false},
         ]
     },
     {
