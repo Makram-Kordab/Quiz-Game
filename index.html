@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,23 @@
     <link rel="stylesheet" href="styleSheet.css">
 </head>
 <body>
-    <div class="app">
-        <h1>Simple Quiz</h1>
-        <div class="quiz">
+    <h1 id="production">Produced by Makram Kordab</h1>
+    <div class="app" id="app">
+        <!-- Menu Screen -->
+        <div id="menu-screen">
+            <h1>Choose a Category</h1>
+            <button class="cat" onclick="selectCategory(0, this)">Computer Scince</button>
+            <button class="cat" onclick="selectCategory(1, this)">Economics</button>
+            <button class="cat" onclick="selectCategory(2, this)">Music</button>
+            <button class="cat" onclick="selectCategory(3, this)">General Knowledge</button>
+            <div id="start-btn-container" style="display:none;">
+                <button class="btn" id="start-btn" onclick="GoQuiz()">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" style="display:none;">
+            <h1>Simple Quiz</h1>
             <h2 id="question">Question goes here</h2>
             <div id="answer-buttons">
                 <button class="btn">Answer 1</button>
@@ -16,7 +31,7 @@
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
-            <button id="next-btn">Next</button>
+            <button id="next-btn" class="btn">Next</button>
         </div>
     </div>
 
